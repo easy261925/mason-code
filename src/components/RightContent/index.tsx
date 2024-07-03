@@ -1,4 +1,4 @@
-import { QuestionCircleOutlined } from '@ant-design/icons';
+import { GithubFilled, QuestionCircleOutlined } from '@ant-design/icons';
 import { SelectLang as UmiSelectLang } from '@umijs/max';
 
 export type SiderTheme = 'light' | 'dark';
@@ -19,6 +19,22 @@ export const Question = () => {
       }}
     >
       <QuestionCircleOutlined />
+    </div>
+  );
+};
+
+export const GitHub = () => {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        height: 26,
+      }}
+      onClick={() => {
+        window.open('https://github.com/easy261925');
+      }}
+    >
+      <GithubFilled />
     </div>
   );
 };
